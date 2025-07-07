@@ -1,13 +1,14 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import joblib
 
 app = Flask(__name__)
+CORS(app)  # ✅ Enables CORS
 
-# Load model and label encoder
 model = joblib.load("career_recommender_model.pkl")
 label_encoder = joblib.load("label_encoder.pkl")
 
-@app.route('/')
+@app.route("/")
 def home():
     return "✅ Flask server is running. This is the Home Page!"
 

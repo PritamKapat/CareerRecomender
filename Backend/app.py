@@ -3,13 +3,14 @@ import joblib
 
 app = Flask(__name__)
 
-# Load your model and label encoder
+# Load model and label encoder
 model = joblib.load("career_recommender_model.pkl")
 label_encoder = joblib.load("label_encoder.pkl")
 
 @app.route('/')
 def home():
     return "✅ Flask server is running. This is the Home Page!"
+
 @app.route("/predict", methods=["POST"])
 def predict():
     data = request.get_json()
@@ -21,6 +22,3 @@ def predict():
     prediction = model.predict([binary_array])[0]
     career = label_encoder.inverse_transform([prediction])[0]
     return jsonify({"recommended_career": career})
-
-if __name__ == "__main__":
-    app.run(debug=True)

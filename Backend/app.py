@@ -20,6 +20,17 @@ def predict():
     if not binary_array or len(binary_array) != len(model.feature_names_in_):
         return jsonify({"error": "Invalid input length"}), 400
 
-    prediction = model.predict([binary_array])[0]
-    career = label_encoder.inverse_transform([prediction])[0]
-    return jsonify({"recommended_career": career})
+    # Get prediction probabilities
+    probabilities = model.predict_proba([binary_array])[0]
+    top_indices = probabilities.argsort()[-3:][::-1]  # Top 3 indices
+
+    top_careers = []
+    for idx in top_indices:
+        career = label_encoder.inverse_transform([idx])[0]
+        prob = round(probabilities[idx], 4)
+        top_careers.append({"career": career, "probability": prob})
+
+    return jsonify({"top_careers": top_careers})
+# if __name__ == "__main__":
+#     app.run(debug=True)
+    

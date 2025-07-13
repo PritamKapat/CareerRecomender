@@ -33,4 +33,4 @@ def predict():
     return jsonify({"top_careers": top_careers})
 # if __name__ == "__main__":
 #     app.run(debug=True)
-    
+

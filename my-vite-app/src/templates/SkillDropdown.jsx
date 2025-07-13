@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../styles/Skilldrop.css';
 
 
 const SkillDropdown = ({ featureGroups, onSelect }) => {
@@ -40,6 +41,7 @@ const SkillDropdown = ({ featureGroups, onSelect }) => {
           {openGroup === group && (
             <div
               style={{
+                color:"white",
                 position: "absolute",
                 top: "100%",            // dropdown appears below the button
                 left: "100%",           // starts at the right edge of the button

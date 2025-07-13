@@ -1,16 +1,20 @@
-import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
-import Home from './templates/home'
+import Navbar from "./templates/Navbar";
+import Home from './templates/Home'
 import MCQAssessment from './templates/MCQAssessment'
+import CareerDetail from './templates/CareerDetail';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      {/* <Home/> */}
-      <MCQAssessment />
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/assessment" element={<MCQAssessment/>} />
+        <Route path="/career/:name" element={<CareerDetail />} />  
+      </Routes>
+    </Router>
   )
 }
 

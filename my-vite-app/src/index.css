@@ -1,101 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap');
 
 body {
   margin: 0;
-  background-color: #ffffff; /* dark background */
-  color: #ffffff;            /* light text */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+  font-family: "Mozilla Text", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-/* From Uiverse.io by adamgiebl */ 
-.cssbuttons-io-button {
-  background: #ffda08;
-  color: rgb(0, 0, 0);
-  font-family: inherit;
-  padding: 0.35em;
-  padding-left: 1.2em;
-  font-size: 17px;
-  font-weight: 500;
-  border-radius: 0.9em;
-  border: none;
-  letter-spacing: 0.05em;
-  display: flex;
-  align-items: center;
-  box-shadow: inset 0 0 1.6em -0.6em #ff9306;
-  overflow: hidden;
-  position: relative;
-  height: 2.8em;
-  padding-right: 3.3em;
-  cursor: pointer;
-}
-
-.cssbuttons-io-button .icon {
-  background: white;
-  margin-left: 1em;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.2em;
-  width: 2.2em;
-  border-radius: 0.7em;
-  box-shadow: 0.1em 0.1em 0.6em 0.2em #ff9100;
-  right: 0.3em;
-  transition: all 0.3s;
-}
-
-.cssbuttons-io-button:hover .icon {
-  width: calc(100% - 0.6em);
-}
-
-.cssbuttons-io-button .icon svg {
-  width: 1.1em;
-  transition: transform 0.3s;
-  color: #ff6c0a;
-}
-
-.cssbuttons-io-button:hover .icon svg {
-  transform: translateX(0.1em);
-}
-
-.cssbuttons-io-button:active .icon {
-  transform: scale(0.95);
-}
-/* From Uiverse.io by adamgiebl */ 
-
-
-@keyframes fly-1 {
-  from {
-    transform: translateY(0.1em);
-  }
-
-  to {
-    transform: translateY(-0.1em);
-  }
-}
-
-
-/* CSS */
-
-
-
-
-/* CSS */
-
-
-.careerRes {
-  margin-top: 20px;
-        padding: 10px;
-        background: #ff8c19;
-background: linear-gradient(90deg, rgba(255, 140, 25, 1) 29%, rgba(255, 191, 0, 1) 57%);
-        border: 2px solid #000302;
-        border-radius:10px;
-        color: #000000;
-        font-weight: bold;
-        font-size: 18px;
-        width: fit-content;
-}
 
 /* From Uiverse.io by Yaya12085 */ 
 .button5 {
@@ -116,7 +28,7 @@ background: linear-gradient(90deg, rgba(255, 140, 25, 1) 29%, rgba(255, 191, 0, 
   will-change: transform;
   transition: all .1s ease-in-out 0s;
   user-select: none;
-  /* Add gradient shading to each side */
+
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   background-position: bottom right, bottom right;
@@ -208,67 +120,731 @@ background: linear-gradient(90deg, rgba(255, 140, 25, 1) 29%, rgba(255, 191, 0, 
 .button5:focus {
   outline: none;
 }
-
-.navbar {
-  /* From https://css.glass */
-/* From https://css.glass */
-background: rgba(11, 7, 7, 0.2);
-border-radius: 10px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(10.5px);
--webkit-backdrop-filter: blur(10.5px);
-border: 1px solid rgba(11, 7, 7, 0.3);
-  position: fixed;
-  z-index: 10;
-  height: 70px;
-  display: flex;
-  width: 100%;
-  gap: 300px;
-
+.intro-modal{
+  margin:20px;
 }
 
-.navbar .heading {
-  padding: 5px;
+#submit{
+  background-image: radial-gradient(100% 100% at 100% 0, #afffa7 0, #27e700 100%);
+  width: 150px;
+  height: 60px;
+  margin-top: 70px;
+  margin-left: 120px;
 }
-
-.navbar .button-1 {
-  margin: 5px;
-  color: white;
-}
-
-/* CSS */
-.button-1 {
-  background-color: #ea4c8900;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
   position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
-.button-1:hover,
-.button-1:focus {
-  background-color: #646464;
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
 }
-.brand {
-  width: 600px;
-  font-family: 'Pacifico', cursive;
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #1010b4;
+  border-radius: 10px;
 }
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+.loader1 {
+    display:"flex";
+    flex-direction:"column";
+    color: #000;
+    align-items: center;
+}
+.msge {
+  margin-left: 150px;
+}
+.loader {
+  margin-top: 300px;
+  margin-left: 100px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.truckWrapper {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-x: hidden;
+}
+/* truck upper body */
+.truckBody {
+  width: 130px;
+  height: fit-content;
+  margin-bottom: 6px;
+  animation: motion 1s linear infinite;
+}
+/* truck suspension animation*/
+@keyframes motion {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* truck's tires */
+.truckTires {
+  width: 100px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px 0px 15px;
+  position: absolute;
+  bottom: 0;
+}
+.truckTires svg {
+  width: 24px;
+}
+
+.road {
+  width: 100%;
+  height: 1.5px;
+  background-color: #282828;
+  position: relative;
+  bottom: 0;
+  align-self: flex-end;
+  border-radius: 3px;
+}
+.road::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  background-color: #282828;
+  right: -50%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 10px solid white;
+}
+.road::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-color: #282828;
+  right: -65%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 4px solid white;
+}
+
+.lampPost {
+  position: absolute;
+  bottom: 0;
+  right: -90%;
+  height: 90px;
+  animation: roadAnimation 1.4s linear infinite;
+}
+
+@keyframes roadAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-350px);
+  }
+}
+/* Modal styles */
+.intro-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-modal {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #000;
+}
+
+.intro-modal button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.Documents-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  height: 45px;
+  border: none;
+  padding: 0px 15px;
+  border-radius: 5px;
+  background-color: rgb(49, 49, 83);
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.folderContainer {
+  width: 40px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.fileBack {
+  z-index: 1;
+  width: 80%;
+  height: auto;
+}
+.filePage {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+}
+.fileFront {
+  width: 85%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.95;
+  transform-origin: bottom;
+  transition: all 0.3s ease-out;
+}
+.text {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.Documents-btn:hover .filePage {
+  transform: translateY(-5px);
+}
+.Documents-btn:hover {
+  background-color: rgb(58, 58, 94);
+}
+.Documents-btn:active {
+  transform: scale(0.95);
+}
+.Documents-btn:hover .fileFront {
+  transform: rotateX(30deg);
+}
+
+#skillsubmit {
+  margin-top: 150px;
+  margin-left: 100px;
+}
+.yesselect {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: #00a600;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #00a600;
+}
+
+.yesselect,
+button span {
+  transition: 200ms;
+}
+
+.yesselect .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+
+.yesselect .icon {
+  position: absolute;
+  border-left: 1px solid #007300;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yesselect svg {
+  width: 15px;
+  fill: #eee;
+}
+
+.yesselect:hover {
+  background: #00a600;
+}
+
+.yesselect:active {
+  background: #00cc00;
+}
+
+.yesselect:hover .text {
+  color: transparent;
+}
+
+.yesselect:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+.yesselect:focus {
+  outline: none;
+}
+
+.yesselect:active .icon svg {
+  transform: scale(0.8);
+}
+
+.buttonSpan {
+  color: white;
+  margin: 150px;
+  font-size: 30px;
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.noselect {
+ width: 150px;
+ height: 50px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 10px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: #e62222;
+}
+
+.noselect, button span {
+ transition: 200ms;
+}
+
+.noselect .text {
+ transform: translateX(35px);
+ color: white;
+ font-weight: bold;
+}
+
+.noselect .icon {
+ position: absolute;
+ border-left: 1px solid #c41b1b;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.noselect svg {
+ width: 15px;
+ fill: #eee;
+}
+
+.noselect:hover {
+ background: #ff3636;
+}
+
+.noselect:hover .text {
+ color: transparent;
+}
+
+.noselect:hover .icon {
+ width: 150px;
+ border-left: none;
+ transform: translateX(0);
+}
+
+.noselect:focus {
+ outline: none;
+}
+
+.noselect:active .icon svg {
+ transform: scale(0.8);
+}
+.career-box{
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 300px;
+  width: 200px;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+/* Career Card Styles - Scoped to prevent collisions */
+.careercard {
+  font-family: Arial, sans-serif;
+  width: 310px;
+  height: 300px;
+  padding: 32px;
+  border-radius: 24px;
+  background: linear-gradient(to bottom right, #60a5fa, #a78bfa);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  color: white;
+  margin: 16px;
+}
+
+.careercard::before,
+.careercard::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.careercard::before {
+  width: 160px;
+  height: 160px;
+  top: -80px;
+  right: -80px;
+}
+
+.careercard::after {
+  width: 128px;
+  height: 128px;
+  bottom: -64px;
+  left: -64px;
+}
+
+.careercard-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 16px;
+  height: 60px;
+}
+
+.careercard-image {
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.careercard-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.careercard-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.careercard-button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.careercard-button svg {
+  margin-right: 8px;
+}
+
+.careercard-button-details {
+  background-color: rgb(253, 253, 253);
+  color: #3b82f6;
+  z-index: 2;
+}
+
+.careercard-button-save {
+  background-color: #7e4ed1;
+  color: white;
+}
+
+.careercard-icon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.skillsoptions {
+  color: rgb(255, 255, 255);
+  width: auto;
+  position: absolute;
+  left: -10px;
+  margin-left: 10px;
+  background: rgba(93, 125, 147, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(93, 125, 147, 0.3);
+  z-index: 4;
+  min-width: 200px;
+}
+.prediction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  margin-top: 80px;
+  border-radius:10px;
+  color: #000;
+}
+.career-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.career-grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* CSS */
+.button-29 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 30px;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+@media (min-width: 768px) {
+.loader {
+  margin-top: 300px;
+  margin-left: 600px;
+}
+.career-grid{
+  flex-direction: row;
+}
+
+/* Modal styles */
+.intro-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-modal {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #000;
+}
+#submit{
+  margin-left: 500px;
+}
+.intro-modal button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.Documents-btn {
+  width: 500px;
+  height: 75px;
+}
+.skillsoptions {
+  width: 400px;
+  position: absolute;
+  left: 600px;
+}
+
+#skillsubmit {
+  width:100px;
+  margin-left:500px;
+}
+.career-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: #000;
+  margin: 30px;
+  margin-left: 450px;
+  background: linear-gradient(90deg, #cce8f3 0%, #f3d9ff 100%); 
+	position: relative;
+	flex-shrink: 0;
+    overflow: unset;
+    &::before,
+    &::after {
+        content: '';
+		position: absolute;
+		left: -6px;
+		top: -6px;
+    border-radius: 20px;
+		width: calc(100% + 12px);
+		height: calc(100% + 12px);
+		background: #333;
+		background-image: linear-gradient(45deg, #ff3c41, #ff8a25, #ffe04f, #4fff88, #56ffef, #37b4ff, #c05aff, #ff3c41, #ff8a25, #ffe04f, #4fff88, #56ffef, #37b4ff, #c05aff);
+        background-size: 500%;
+		animation: position 12s linear infinite alternate;
+		z-index: -1;
+    }
+    
+    &::after {
+        filter: blur(10px);
+    }
+}
+
+@keyframes position {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+}
+/* From Uiverse.io by vinodjangid07 */ 

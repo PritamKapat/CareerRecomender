@@ -1,0 +1,374 @@
+.career-container {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.career-title {
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+.career-section {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.skills-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-item {
+  background-color: #282c34;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #4caf50;
+  font-size: 14px;
+}
+
+/* Salary Grid */
+.salary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.salary-item {
+  background-color: #2a2d3a;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #4caf50;
+}
+
+.salary-label {
+  display: block;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 5px;
+}
+
+.salary-value {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Market Grid */
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.market-item {
+  background-color: #2a2d3a;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #2196f3;
+}
+
+.market-label {
+  display: block;
+  font-weight: bold;
+  color: #2196f3;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.market-value {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Work Style Grid */
+.work-style-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.work-item {
+  background-color: #2a2d3a;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #ff9800;
+}
+
+.work-label {
+  display: block;
+  font-weight: bold;
+  color: #ff9800;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.work-value {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Tools & Technologies */
+.tools-category {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.tools-category-title {
+  display: block;
+  color: #9c27b0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tool-item {
+  background-color: #2a2d3a;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #9c27b0;
+  font-size: 13px;
+}
+
+/* Education Grid */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.education-item {
+  background-color: #2a2d3a;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #e91e63;
+}
+
+.education-label {
+  display: block;
+  font-weight: bold;
+  color: #e91e63;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.education-value {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.certifications {
+  margin-top: 20px;
+}
+
+.certifications-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.certification-item {
+  background-color: #2a2d3a;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #e91e63;
+  font-size: 13px;
+}
+
+/* Career Progression */
+.progression-timeline {
+  margin-top: 15px;
+}
+
+.progression-item {
+  background-color: #2a2d3a;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 4px solid #00bcd4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progression-stage {
+  font-weight: bold;
+  color: #00bcd4;
+  font-size: 14px;
+}
+
+.progression-role {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Personality Grid */
+.personality-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.personality-category {
+  background-color: #2a2d3a;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #ff5722;
+}
+
+.traits-list, .soft-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.trait-item, .soft-skill-item {
+  background-color: #1e1e2f;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #ff5722;
+  font-size: 13px;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.benefit-item {
+  background-color: #2a2d3a;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #4caf50;
+}
+
+.benefit-label {
+  display: block;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.benefit-value {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.perks {
+  margin-top: 20px;
+}
+
+.perks-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.perk-item {
+  background-color: #2a2d3a;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #4caf50;
+  font-size: 13px;
+}
+
+/* Future Outlook */
+.future-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.future-item {
+  background-color: #2a2d3a;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #9c27b0;
+}
+
+.future-label {
+  display: block;
+  font-weight: bold;
+  color: #9c27b0;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.future-value {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.trends {
+  margin-top: 20px;
+}
+
+.trends-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.trend-item {
+  background-color: #2a2d3a;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #9c27b0;
+  font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .career-container {
+    padding: 20px 10px;
+  }
+  
+  .career-title {
+    font-size: 28px;
+  }
+  
+  .salary-grid, .market-grid, .work-style-grid, .education-grid, .benefits-grid, .future-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .personality-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .progression-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}

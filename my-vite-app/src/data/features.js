@@ -1,4 +1,4 @@
-const featureList = [
+const orderedFeatures = [
   "Drawing", "Dancing", "Singing", "Sports", "Video Game", "Acting", "Travelling", "Photography",
   "Teaching", "Exercise", "Coding", "Electricity Components", "Mechanic Parts", "Computer Parts",
   "Researching", "Architecture", "Historic Collection", "Botany", "Zoology", "Physics", "Accounting",
@@ -9,4 +9,4 @@ const featureList = [
   "Listening Music"
 ];
 
-export default featureList;
+export default orderedFeatures;

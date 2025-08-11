@@ -9,7 +9,7 @@ const SavedList = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get("http://127.0.0.1:5000/saved-careers", {
+      .get("http://127.0.0.1:4000/saved-careers", {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then((res) => {
@@ -23,7 +23,7 @@ const SavedList = () => {
   const handleDelete = (careerId) => {
     const token = localStorage.getItem("token");
     axios
-      .delete(`http://127.0.0.1:5000/saved-careers/${careerId}`, {
+      .delete(`http://127.0.0.1:4000/saved-careers/${careerId}`, {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then(() => {

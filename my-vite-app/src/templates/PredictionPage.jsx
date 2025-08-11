@@ -15,7 +15,7 @@ const PredictionPage = () => {
       setLoading(true);
       setError(null);
 
-      const response = await fetch("http://127.0.0.1:5000/predict", {
+      const response = await fetch("http://127.0.0.1:4000/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ binary_array: binaryFeatures }),
@@ -62,7 +62,7 @@ const PredictionPage = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await axios.get("http://127.0.0.1:5000/saved-careers", {
+      const res = await axios.get("http://127.0.0.1:4000/saved-careers", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -72,7 +72,7 @@ const PredictionPage = () => {
       }
 
       await axios.post(
-        "http://127.0.0.1:5000/save-careers",
+        "http://127.0.0.1:4000/save-careers",
         { career_name: careerName },
         { headers: { Authorization: `Bearer ${token}` } }
       );

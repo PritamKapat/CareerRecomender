@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/me', {
+      const res = await fetch('http://localhost:4000/me', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const res = await fetch('http://localhost:5000/login', {
+      const res = await fetch('http://localhost:4000/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -67,7 +67,7 @@ export const AuthProvider = ({ children }) => {
 
   const signup = async (name, email, password, age) => {
     try {
-      const res = await fetch('http://localhost:5000/signup', {
+      const res = await fetch('http://localhost:4000/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password, age }),
@@ -87,7 +87,7 @@ export const AuthProvider = ({ children }) => {
 
   const verifyOtp = async (email, otp) => {
     try {
-      const res = await fetch('http://localhost:5000/verify-otp', {
+      const res = await fetch('http://localhost:4000/verify-otp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, otp }),
